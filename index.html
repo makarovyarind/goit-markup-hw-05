@@ -60,7 +60,7 @@
         <section class="block-first">
             <div class="container">
                 <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="button button-flex">Замовити послугу</button>
+                <button type="button" class="button button-flex" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="block-second">
@@ -132,12 +132,21 @@
                 <h2 class="title-secondary">Чим ми займаємося</h2>
                 <ul class="ul-second">
                     <li><img class="img-first" src="./images/box1.jpg"
-                            alt="Людина пише код на клавіатурі використовуючи планшет"></li>
+                            alt="Людина пише код на клавіатурі використовуючи планшет">
+                        <div class="img-discription">
+                            <h3 class="img-discription-text">Десктопні додатки</h3>
+                        </div></li>
                     <li><img class="img-first" src="./images/box2.jpg"
                             alt="Людина тримає в руці телефон. Паралельно дивиться на екран, на якому зображено 3 макети дизайну мобільних версій веб додатку">
+                            <div class="img-discription">
+                                <h3 class="img-discription-text">Мобільні додатки</h3>
+                            </div>
                     </li>
                     <li><img class="img-first" src="./images/box3.jpg"
-                            alt="Людина тримає в руках планшет та стілус. На планшеті зобрежено палітра кольорів"></li>
+                            alt="Людина тримає в руках планшет та стілус. На планшеті зобрежено палітра кольорів">
+                        <div class="img-discription">
+                            <h3 class="img-discription-text">Дизайнерські рішення</h3>
+                        </div></li>
                 </ul>
             </div>
         </section>
@@ -368,6 +377,18 @@
             </ul>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-button" type="button" data-modal-close>
+            <div class="modal-button-item">
+                <svg width="18" height="18" class="modal-button-icon">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </div>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
